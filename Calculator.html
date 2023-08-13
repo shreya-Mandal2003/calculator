@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Cal.css">
+</head>
+<body>
+    <center><h1>My Calculator!</h1></center>
+    <form class="body">
+        <div class="input">
+            <input type="text" name="inp" class="inp2">
+            <input type="text" name="inpsec" class="inp3">
+        </div>
+        <div class="row">
+            <input type="button" value="AC" class="btn" onclick="inp.value = '' ,inpsec.value=''"></input>
+            <input type="button" value="DE" class="btn" onclick="inp.value = inp.value.toString().slice(0,-1)"></input>
+            <input type="button" value="." class="btn" onclick="inp.value += '.'"></input>
+            <input type="button" value="/" class="btn" onclick="inp.value += '/' "></input>
+        </div>
+        <div class="row">
+            <input type="button" value="7" class="btn" onclick="inp.value += '7' "></input>
+            <input type="button" value="8" class="btn" onclick="inp.value += '8' "></input>
+            <input type="button" value="9" class="btn" onclick="inp.value += '9' "></input>
+            <input type="button" value="*" class="btn" onclick="inp.value += '*' "></input>
+        </div>
+        <div class="row">
+            <input type="button" value="4" class="btn" onclick="inp.value += '4' "></input>
+            <input type="button" value="5" class="btn" onclick="inp.value += '5' "></input>
+            <input type="button" value="6" class="btn" onclick="inp.value += '6' "></input>
+            <input type="button" value="-" class="btn" onclick="inp.value += '-' "></input>
+        </div>
+        <div class="row">
+            <input type="button" value="1" class="btn" onclick="inp.value += '1' "></input>
+            <input type="button" value="2" class="btn" onclick="inp.value += '2' "></input>
+            <input type="button" value="3" class="btn" onclick="inp.value += '3' "></input>
+            <input type="button" value="+" class="btn" onclick="inp.value += '+' "></input>
+        </div>
+        <div class="row">
+            <input type="button" value="00" class="btn" onclick="inp.value += '00' "></input>
+            <input type="button" value="0" class="btn" onclick="inp.value += '0' "></input>
+            <input type="button" value="=" class="btn2" onclick="inpsec.value = eval(inp.value)"></input>
+        </div>
+    </form>
+</body>
+</html>
